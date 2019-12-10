@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d6d7d7"
+    tools:context=".CompteActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Mon Compte"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="120dp"
+        android:text="Numéro de Tel :"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:id="@+id/etSearch"
+        android:inputType="number"
+        android:hint="06XXXXXXXX"
+        android:layout_marginLeft="25dp"
+        android:gravity="center"
+        android:layout_marginRight="130dp"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="66dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="352dp"
+        android:text="Plaques :"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnSearch"
+        android:layout_width="79dp"
+        android:layout_height="78dp"
+        android:onClick="Search"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bt1_search" />
+
+    <EditText
+        android:id="@+id/etPlaque1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:hint="XX000XX"
+        android:textSize="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/etPlaque2" />
+
+    <EditText
+        android:id="@+id/etPlaque2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="XX000XX"
+        android:layout_marginBottom="172dp"
+        android:textSize="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="85dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnDelete"
+        app:srcCompat="@drawable/bt1_add" />
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="btnStopActivity"
+        app:layout_constraintBottom_toBottomOf="@+id/btnValid"
+        app:layout_constraintEnd_toStartOf="@+id/btnValid"
+        app:layout_constraintTop_toTopOf="@+id/btnValid"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/bt1_cancel" />
+
+    <ImageButton
+        android:id="@+id/btnValid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bt1_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
